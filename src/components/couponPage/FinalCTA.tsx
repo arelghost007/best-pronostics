@@ -6,7 +6,7 @@ export default function FinalCTA({ whatsappLink }: { whatsappLink: string }) {
   return (
     <section
       id="finalCTASection"
-      className="relative w-full bg-[#080C14] text-white py-16 sm:py-24 px-4 sm:px-6 flex justify-center items-center overflow-hidden font-['Plus_Jakarta_Sans',sans-serif]"
+      className="relative w-full bg-[#080C14] text-white pb-25 pt-16 sm:pt-24 sm:pb-34 px-4 sm:px-6 flex justify-center items-center overflow-hidden font-['Plus_Jakarta_Sans',sans-serif]"
     >
       {/* Texture de grille en aplat (Strictement 0 dégradé) */}
       <div

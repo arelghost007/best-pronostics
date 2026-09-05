@@ -137,7 +137,7 @@ export default function ScaleCarousel({
         />
       )}
 
-      <div className="relative w-full py-8 px-4 font-['Plus_Jakarta_Sans',sans-serif]">
+      <div className="relative w-full py-8 px-2 md:px-4 font-['Plus_Jakarta_Sans',sans-serif]">
         {/* Structure du carrousel Embla */}
         <div className="w-full overflow-hidden" ref={emblaRef}>
           <div className="flex items-center gap-0 will-change-transform">
@@ -210,7 +210,7 @@ export default function ScaleCarousel({
                           <div className="text-[10px] text-slate-400 uppercase tracking-widest font-bold mb-1">
                             Cote
                           </div>
-                          <div className="font-['Space_Grotesk',sans-serif] text-lg text-white font-extrabold">
+                          <div className="font-['Space_Grotesk',sans-serif] text-sm text-white font-extrabold">
                             x{coupon.odds || "—"}
                           </div>
                         </div>
@@ -218,7 +218,7 @@ export default function ScaleCarousel({
                           <div className="text-[10px] text-slate-400 uppercase tracking-widest font-bold mb-1">
                             Mise
                           </div>
-                          <div className="font-['Space_Grotesk',sans-serif] text-lg text-white font-extrabold">
+                          <div className="font-['Space_Grotesk',sans-serif] text-sm text-white font-extrabold">
                             {coupon.stake || "—"}
                           </div>
                         </div>
@@ -226,7 +226,7 @@ export default function ScaleCarousel({
                           <div className="text-[10px] text-slate-400 uppercase tracking-widest font-bold mb-1">
                             Gain
                           </div>
-                          <div className="font-['Space_Grotesk',sans-serif] text-lg text-[#25D366] font-extrabold">
+                          <div className="font-['Space_Grotesk',sans-serif] text-xs text-[#25D366] font-extrabold">
                             {coupon.gain || "—"}
                           </div>
                         </div>
