@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+:root {
+  --bg-dark: #080C14;
+  --card-bg: #0F172A;
+  --accent-blue: #0052FF;
+  --accent-blue-hover: #1E66FF;
+  --border-color: #1E293B;
+  --text-main: #FFFFFF;
+  --text-muted: #94A3B8;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+.hero-section {
+  position: relative;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.5rem;
+  overflow: hidden;
+}
+
+/* Texture de grille en aplat (aucun dégradé) */
+.hero-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-size: 30px 30px;
+  background-image: 
+    linear-gradient(to right, rgba(30, 41, 59, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 41, 59, 0.3) 1px, transparent 1px);
+  pointer-events: none;
+}
+
+/* Logo & Badge */
+.hero-logo-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.hero-logo {
+  border-radius: 50%;
+  border: 3px solid var(--accent-blue);
+  box-shadow: 0 0 0 6px rgba(0, 82, 255, 0.15);
+}
+
+.logo-badge-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--accent-blue);
+  border: 2px solid var(--bg-dark);
+  border-radius: 50%;
+  padding: 6px;
+  display: flex;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #0F172A;
+  border: 1px solid var(--accent-blue);
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 1.5rem;
+}
+
+.dot-pulse {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-blue);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--accent-blue);
+}
+
+.badge-text {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+
+/* Titres */
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.title-accent {
+  color: var(--bg-dark);
+  background-color: var(--accent-blue);
+  padding: 0 10px;
+  display: inline-block;
+  transform: rotate(-1deg);
+}
+
+.hero-subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.highlight-text {
+  color: #FFFFFF;
+  border-bottom: 2px solid var(--accent-blue);
+}
+
+/* Ticket Design sans dégradés */
+.ticket-container {
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: 2rem;
+  perspective: 1000px;
+}
+
+.ticket-card {
+  position: relative;
+  background-color: var(--card-bg);
+  border: 2px solid var(--accent-blue);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 8px 8px 0px #002B87; /* Ombre solide ultra nette */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ticket-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 12px 12px 0px #002B87;
+}
+
+/* Encoches physiques (Ticket Cutouts) */
+.notch {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--bg-dark);
+  border: 2px solid var(--accent-blue);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.notch-left {
+  left: -11px;
+}
+
+.notch-right {
+  right: -11px;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-tag {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  font-weight: 700;
+  background-color: #1E293B;
+  color: var(--accent-blue);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.ticket-date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.ticket-odds-box {
+  background-color: var(--accent-blue);
+  color: #FFFFFF;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-align: right;
+}
+
+.odds-label {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+.odds-value {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.ticket-divider {
+  border-bottom: 2px dashed #1E293B;
+  margin: 1.25rem 0;
+}
+
+/* Zone Image et Flou Verrouillé */
+.ticket-body {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background-color: #000000;
+}
+
+.coupon-image {
+  width: 100%;
+  height: auto;
+  /* filter: blur(8px); */
+  /* opacity: 0.4; */
+  transform: scale(1.05);
+}
+
+.lock-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.lock-overlay svg {
+  color: var(--accent-blue);
+}
+
+/* Pied de ticket */
+.ticket-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.stat-val {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.stat-val-gain {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #38BDF8;
+}
+
+.align-right {
+  text-align: right;
+}
+
+/* Preuve Sociale */
+.hero-social-proof {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.proof-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+
+.proof-icon {
+  color: var(--accent-blue);
+}
+
+.proof-separator {
+  width: 1px;
+  height: 16px;
+  background-color: var(--border-color);
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
