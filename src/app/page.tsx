@@ -18,7 +18,7 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
-    name: "BestPronos VIP",
+    name: "MHRT Pronos VIP",
     description:
       "Analyses de pronostics sportifs et coupons à forte cote partagés quotidiennement.",
     offers: {

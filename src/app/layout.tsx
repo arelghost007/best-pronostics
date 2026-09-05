@@ -15,7 +15,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "R700 Pronos - Coupons VIP",
+  title: "MHRT Pronos - Coupons VIP",
   description: "Pronostics sportifs et coupons VIP",
 };
 

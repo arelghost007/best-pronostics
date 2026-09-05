@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="hero-logo-wrapper">
         <Image 
           src="/logo.jpg" 
-          alt="Logo BestPronos" 
+          alt="Logo MHRT Pronos" 
           width={130} 
           height={130} 
           priority
