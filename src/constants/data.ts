@@ -16,7 +16,7 @@ export const WONNING_COUPONS: WinningCoupon[] = [
     odds: 1214.439,
     stake: 5000,
     gain: 2471235.07,
-    date: "05/08/2026",
+    date: "05/09/2026",
     image_url: "/assets/won_1.jpg",
   },
   {
