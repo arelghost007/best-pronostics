@@ -13,7 +13,7 @@ export const COUPON_DATA: CouponData = {
 export const WONNING_COUPONS: WinningCoupon[] = [
   {
     id: 1,
-    odds: 1214.439,
+    odds: 494.247,
     stake: 5000,
     gain: 2471235.07,
     date: "05/09/2026",
