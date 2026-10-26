@@ -17,18 +17,18 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mhrt-pronos.vercel.app"),
+  metadataBase: new URL("https://best-pronostics.vercel.app/"),
 
   title: {
-    default: "MHRT Pronos — Pronostics VIP Gratuits",
-    template: "%s | MHRT Pronos",
+    default: "Best Pronostics — Pronostics VIP Gratuits",
+    template: "%s | Best Pronostics",
   },
 
   description:
-    "Découvrez gratuitement nos pronostics sportifs, analyses de matchs et coupons VIP. Rejoignez la communauté MHRT Pronos.",
+    "Découvrez gratuitement nos pronostics sportifs, analyses de matchs et coupons VIP. Rejoignez la communauté Best Pronostics.",
 
   keywords: [
-    "MHRT Pronos",
+    "Best Pronostics",
     "pronostics sportifs",
     "pronostics football",
     "pronostics gratuits",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     "analyse football",
   ],
 
-  authors: [{ name: "MHRT Pronos" }],
-  creator: "MHRT Pronos",
-  publisher: "MHRT Pronos",
+  authors: [{ name: "Best Pronostics" }],
+  creator: "Best Pronostics",
+  publisher: "Best Pronostics",
 
   robots: {
     index: true,
@@ -50,27 +50,27 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://mhrt-pronos.vercel.app",
-    siteName: "MHRT Pronos",
+    url: "https://best-pronostics.vercel.app/",
+    siteName: "Best Pronostics",
 
-    title: "MHRT Pronos — Pronostics VIP Gratuits",
+    title: "Best Pronostics — Pronostics VIP Gratuits",
 
     description:
-      "Pronostics sportifs gratuits, analyses de matchs et coupons VIP. Rejoignez MHRT Pronos et découvrez nos sélections.",
+      "Pronostics sportifs gratuits, analyses de matchs et coupons VIP. Rejoignez Best Pronostics et découvrez nos sélections.",
 
     images: [
       {
         url: "/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "MHRT Pronos — Pronostics VIP Gratuits",
+        alt: "Best Pronostics — Pronostics VIP Gratuits",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "MHRT Pronos — Pronostics VIP Gratuits",
+    title: "Best Pronostics — Pronostics VIP Gratuits",
     description:
       "Pronostics sportifs gratuits, analyses de matchs et coupons VIP.",
     images: ["/og-image.webp"],
