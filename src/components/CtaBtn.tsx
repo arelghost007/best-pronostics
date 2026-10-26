@@ -1,7 +1,9 @@
 "use client";
 
 import { ArrowRight, Zap } from "lucide-react";
+import React from "react";
 
+// Déclaration propre de fbq pour TypeScript
 declare global {
   interface Window {
     fbq?: (...args: any[]) => void;
@@ -16,10 +18,27 @@ interface CtaBtnProps {
 export default function CtaBtn({ whatsappUrl, className = "" }: CtaBtnProps) {
   const handleWhatsAppClick = () => {
     if (typeof window !== "undefined" && window.fbq) {
-      window.fbq("track", "Contact", {
-        content_name: "Récupérer le coupon WhatsApp",
-        content_category: "Conversion",
+      // 1. Créer un ID unique pour cette interaction spécifique (déduplication)
+      const eventId = `contact_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`;
+
+      // 2. Envoyer l'événement Pixel côté client avec l'eventID
+      window.fbq(
+        "track",
+        "Contact",
+        {
+          content_name: "Récupérer le Coupon WhatsApp",
+          content_category: "Conversion",
+        },
+        { eventID: eventId },
+      );
+
+      // 3. Si vous envoyez aussi via CAPI côté serveur, passez le MÊME `eventId` à votre API :
+      /*
+      fetch('/api/meta-conversions', {
+        method: 'POST',
+        body: JSON.stringify({ eventName: 'Contact', eventId: eventId })
       });
+      */
     }
   };
 
@@ -34,7 +53,7 @@ export default function CtaBtn({ whatsappUrl, className = "" }: CtaBtnProps) {
         onClick={handleWhatsAppClick}
         className="relative w-full sm:w-auto flex items-center justify-center gap-3 bg-[#0052FF] text-white border-2 border-[#0052FF] rounded-xl py-4 px-8 sm:px-10 shadow-[6px_6px_0px_0px_#002B87] hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[10px_10px_0px_0px_#002B87] active:translate-y-[4px] active:translate-x-[4px] active:shadow-[0px_0px_0px_0px_#002B87] transition-all duration-200 cursor-pointer overflow-hidden"
       >
-        {/* Effet de reflet géométrique au survol (Strictement 0 dégradé, juste un bloc blanc semi-transparent oblique) */}
+        {/* Effet de reflet géométrique au survol */}
         <div className="absolute inset-0 w-[200%] translate-x-[-150%] skew-x-[-45deg] bg-white/20 group-hover:translate-x-[150%] transition-transform duration-700 ease-out z-0"></div>
 
         {/* Icône Action Rapide */}
