@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Oswald, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { Suspense } from "react";
+import MetaPixel from "@/components/MetaPixel/MetaPixel";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -86,6 +88,9 @@ export default function RootLayout({
       className={`${oswald.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-black text-zinc-100 font-space">
+        <Suspense fallback={null}>
+          <MetaPixel />
+        </Suspense>
         {children}
       </body>
     </html>
