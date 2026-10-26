@@ -23,8 +23,8 @@ export default function Hero() {
       {/* Logo avec contour néon bleu */}
       <div className="hero-logo-wrapper">
         <Image 
-          src="/logo.jpg" 
-          alt="Logo MHRT Pronos" 
+          src="/logo.png" 
+          alt="Logo Best Pronos" 
           width={130} 
           height={130} 
           priority
@@ -61,7 +61,7 @@ export default function Hero() {
           {/* En-tête du ticket */}
           <div className="ticket-header">
             <div>
-              <span className="ticket-tag">MATCH DU DAY</span>
+              <span className="ticket-tag">MATCH DU JOUR</span>
               <div className="ticket-date">{currentCoupon.date}</div>
             </div>
             <div className="ticket-odds-box">
@@ -115,7 +115,7 @@ export default function Hero() {
         <div className="proof-separator"></div>
         <div className="proof-item">
           <Users className="proof-icon" size={18} />
-          <span><strong>+4 000</strong> membres VIP</span>
+          <span><strong>+5 000</strong> membres VIP</span>
         </div>
       </div>
     </section>
