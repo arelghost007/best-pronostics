@@ -210,7 +210,6 @@
 /* Zone Image et Flou Verrouillé */
 .ticket-body {
   position: relative;
-  border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--border-color);
   background-color: #000000;
@@ -219,9 +218,6 @@
 .coupon-image {
   width: 100%;
   height: auto;
-  /* filter: blur(8px); */
-  /* opacity: 0.4; */
-  transform: scale(1.05);
 }
 
 .lock-overlay {

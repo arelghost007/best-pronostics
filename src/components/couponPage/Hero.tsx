@@ -66,7 +66,7 @@ export default function Hero() {
             </div>
             <div className="ticket-odds-box">
               <span className="odds-label">COTE TOTALE</span>
-              <span className="odds-value">@{odds}</span>
+              <span className="odds-value">{odds}</span>
             </div>
           </div>
 
