@@ -23,7 +23,7 @@ export default function Hero() {
       {/* Logo avec contour néon bleu */}
       <div className="hero-logo-wrapper">
         <Image 
-          src="/logo.png" 
+          src="/logo1.webp" 
           alt="Logo Best Pronos" 
           width={130} 
           height={130} 

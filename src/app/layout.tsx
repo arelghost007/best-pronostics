@@ -60,7 +60,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/og-image.webp",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Best Pronostics — Pronostics VIP Gratuits",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     title: "Best Pronostics — Pronostics VIP Gratuits",
     description:
       "Pronostics sportifs gratuits, analyses de matchs et coupons VIP.",
-    images: ["/og-image.webp"],
+    images: ["/og-image.png"],
   },
 };
 
