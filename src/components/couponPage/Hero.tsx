@@ -13,7 +13,9 @@ export default function Hero() {
   const stake = currentCoupon?.stake ? `${currentCoupon.stake.toLocaleString('fr-FR')} FCFA` : "—"
   const gain = currentCoupon?.gain ? `${currentCoupon.gain.toLocaleString('fr-FR')} FCFA` : "—"
   const couponImage = currentCoupon?.image_url || "/assets/image.png"
-  const whatsappUrl = currentCoupon?.whatsapp_link || "https://chat.whatsapp.com/DTobg9SWau099IAdQ7WU4v"
+  const whatsappUrl =
+    currentCoupon?.whatsapp_link ||
+    "https://whatsapp.com/channel/0029VbEcwtN47Xe6KoaZrZ1O";
 
   return (
     <section id="heroSection" className="hero-section">
