@@ -15,7 +15,7 @@ export default function Hero() {
   const couponImage = currentCoupon?.image_url || "/assets/image.png"
   const whatsappUrl =
     currentCoupon?.whatsapp_link ||
-    "https://whatsapp.com/channel/0029VbEcwtN47Xe6KoaZrZ1O";
+    "https://whatsapp.com/channel/0029Vb7vQ3XId7nQtND3Vu3I";
 
   return (
     <section id="heroSection" className="hero-section">
@@ -25,7 +25,7 @@ export default function Hero() {
       {/* Logo avec contour néon bleu */}
       <div className="hero-logo-wrapper">
         <Image 
-          src="/r700.webp" 
+          src="/logo1.webp" 
           alt="Logo Best Pronos" 
           width={130} 
           height={130} 
