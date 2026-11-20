@@ -7,7 +7,7 @@ export const COUPON_DATA: CouponData = {
   gain: 25744578.89,
   date: "24/11/2026",
   image_url: "/assets/coupon_jour.webp",
-  whatsapp_link: "https://whatsapp.com/channel/0029VbCqzar7DAWxI3NmgH01",
+  whatsapp_link: "https://whatsapp.com/channel/0029Vb7vQ3XId7nQtND3Vu3I",
 };
 // MHRT PRONOS : https://whatsapp.com/channel/0029VbBaBPKEwEk5K7WG1y0r
 // R700 : https://whatsapp.com/channel/0029VbBQO9YFi8xh4alTcn1e
