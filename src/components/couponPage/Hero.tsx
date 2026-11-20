@@ -26,7 +26,7 @@ export default function Hero() {
       <div className="hero-logo-wrapper">
         <Image 
           src="/logo1.webp" 
-          alt="Logo Best Pronos" 
+          alt="Logo Best Pronostics" 
           width={130} 
           height={130} 
           priority
